@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
         description: 'Test description 2'
     }]
     // passing all articles onto our index
-    res.render('index', { articles: articles })
+    res.render('articles/index', { articles: articles })
 })
 // allows us to start up our port at localhost:5000
 app.listen(5000);
